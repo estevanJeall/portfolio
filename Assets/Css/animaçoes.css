@@ -1,0 +1,74 @@
+#ola span:hover{
+    cursor: pointer;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#ola::after{
+    content: "|";
+    margin-left: 10px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+}
+
+#img1{
+    animation: float 4s ease-in-out infinite;
+    opacity: .7;
+    transition: .2s;
+}
+
+#img2{
+    animation: float 2.5s ease-in-out infinite;
+    opacity: .7;
+    transition: .2s;
+}
+
+#img1:hover, #img2:hover{
+    opacity: 1;
+    
+}
+
+#d-dogs:hover{
+    opacity: 1;
+}
+
+#coffee:hover{
+    opacity: 1;
+}
+
+#landing:hover{
+    opacity: 1;
+}
+
+.ver{
+    display: flex !important;
+}
+
+.card-projetos:hover{
+    transform: translate(-1%, 1%) scale(1.05) ;
+    cursor: pointer;
+}
+
+.line-imgs1 img:hover, .line-imgs2 img:hover, .line-imgs3 img:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: translate(-1%, 1%) scale(1.1) ;
+}

@@ -1,0 +1,167 @@
+
+
+@media (max-width: 990px){
+    .custom-shape-divider-top-1673491096{
+        display: none;
+    }
+
+    .main-div2 img{
+        width: 100px;
+    }
+
+    .separado{
+        width: 140px !important;
+    }
+}
+
+@media (max-width: 1165px){
+    .main-div4-line2{
+        display: none;
+    }
+
+    .main-div4-line1{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .card-projetos{
+        width: 27vw;
+        height: 27vh;
+    }
+
+    .main-div4-vizu{
+        display: none;
+    }
+
+    .main-div4{
+        height: 110vh;
+    }
+}
+
+@media (max-width: 1050px){
+    .card-projetos{
+        width: 35vw;
+        height: 30vh;
+    }
+
+    header{
+        width: 8vw;
+    }
+
+    .main-div3{
+        flex-direction: column;
+        height: 110vh;
+    }
+
+    .main-div3-div1{
+        width: 100%;
+        height: 50%;
+    }
+
+    .main-div3-div2{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 890px){
+    .card-projetos{
+        width: 40vw;
+        height: 33vh;
+    }
+
+    .main-div4{
+        height: 140vh;
+    }
+}
+
+@media (max-width: 860px){
+    .card-projetos{
+        width: 50vw;
+        height: 38vh;
+    }
+}
+
+@media (max-width: 800px){
+    .card-projetos{
+        width: 60vw;
+        height: 44vh;
+    }
+}
+
+@media (max-width: 745px){
+    .card-projetos{
+        width: 70vw;
+        height: 48vh;
+    }
+
+    .main-div4{
+        height: 180vh;
+    }
+
+    .main-div2 img{
+        width: 70px;
+    }
+
+    .separado{
+        width: 100px !important;
+    }
+
+    header{
+        width: 10vw;
+    }
+}
+
+@media (max-width: 700px){
+    .card-projetos{
+        width: 90vw;
+        height: 55vh;
+    }
+}
+
+@media (max-width: 650px){
+    .card-projetos{
+        width: 50vw;
+        height: 30vh;
+    }
+
+    .main-div4{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 600px){
+    .card-projetos{
+        width: 40vw;
+        height: 20vh;
+    }
+
+    .main-div4{
+        height: 80vh;
+    }
+}
+
+@media (max-width: 550px){
+    header{
+        display: none;
+    }
+
+    #name{
+        text-align: center;
+    }
+
+    #sla{
+        display: block;
+    }
+}
+
+@media (max-width: 500px){
+    .card-projetos{
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .main-div4{
+        height: 100vh;
+    }
+}

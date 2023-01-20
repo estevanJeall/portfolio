@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estevan - Portfolio</title>
+
+        <link rel="shortcut icon" href="./Assets/img/icon.png">
+
+        <link rel="stylesheet" href="./Assets/css/shape.css">
+        <link rel="stylesheet" href="./Assets/css/animaçoes.css">
+        <link rel="stylesheet" href="./Assets/Css/index.css">
+        <link rel="stylesheet" href="./Assets/Css/responsive.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <div class="header-button">
+                <!--ínicio botão navbar-->
+                <div class="header-button-case">
+                    <input type="checkbox" name="menu-h" id="menu-h">
+
+                    <label class="label" for="menu-h">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <!--Final botão navbar-->
+
+            <!--ínicio navbar-->
+            <div class="header-main">
+                <a href="#h-one">
+                    <img width="35px" src="./Assets/img/perfil.png" alt="">
+                </a>
+                <a href="#h-two">
+                    <img width="40px" src="./Assets/img/skill.png" alt="">
+                </a>
+                <a href="#h-three">
+                    <img width="35px" src="./Assets/img/blueprint.png" alt="">
+                </a>
+                <a href="#h-four">
+                    <img width="35px" src="./Assets/img/consola-de-jogos.png" alt="">
+                </a>
+            </div>
+            <!--final navbar-->
+        </header>
+
+        <main>
+            <!--ínicio Perfil-->
+            <div class="main-div1" id="h-one">
+                <div class="custom-shape-divider-top-1673491096">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+                <div class="main-div1-div1">
+                    <div class="perfil">
+                        <div class="estevan">
+
+                        </div>
+                    </div>
+                    <h1 id="ola">Olá, eu sou <br id="sla"> <span onclick="anima()" id="name">Estevan Chicoski Vieira</span>.</h1>
+                    <h3 id="main-id-one"><span>Programador</span> Full-Stack</h3>
+                </div>
+            </div>
+            <!--Fim Perfil-->
+
+            <!--ínicio Float Imgs-->
+            <div class="main-div2">
+                <img width="185px" class="separado" id="img1" src="./Assets/img/html.png" alt="">
+                    <img width="130px" id="img2" src="./Assets/img/js.png" alt="">
+                <img width="130px" id="img1" src="./Assets/img/css.png" alt="">
+                    <img width="130px" id="img2" src="./Assets/Img/php.png" alt="">
+            </div>
+            <!--Fim Float Imgs-->
+
+            <!--ínicio Skils-->
+            <div class="main-div3" id="h-two">
+                <div class="main-div3-div1">
+                    <div class="line-imgs1">
+                        <img onpointerleave="cancel()" onpointerover="html()" id="Html" width="70px" src="./Assets/img/html2.png" alt="">
+                            <img onpointerleave="cancel()" onpointerover="css()" id="Css" width="70px" src="./Assets/img/css2.png" alt="">
+                        <img onpointerleave="cancel()" onpointerover="js()" id="javaScript" width="70px" src="./Assets/img/js2.png" alt="">
+                    </div>
+                    <div class="line-imgs2">
+                        <img onpointerleave="cancel()" onpointerover="lua()" id="lua" width="65px" src="./Assets/img/lua.png" alt="">
+                            <img onpointerleave="cancel()" onpointerover="node()" id="Node" width="80px" src="./Assets/img/node.png" alt="">
+                        <img onpointerleave="cancel()" onpointerover="react()" id="React" width="65px" src="./Assets/img/react.png" alt="">
+                    </div>
+                    <div class="line-imgs3">
+                        <img onpointerleave="cancel()" onpointerover="php()" id="php" width="65px" src="./Assets/Img/php2.png" alt="">
+                            <img onpointerleave="cancel()" onpointerover="git()" id="git" width="65px" src="./Assets/Img/git.png" alt="">
+                        <img onpointerleave="cancel()" onpointerover="boot()" id="boot" width="70px" src="./Assets/Img/bootstrap.png" alt="">
+                    </div>
+                </div>
+                <div class="main-div3-div2">
+                    <h5>/* passe o mouse por cima de minhas hábilidades para saber mais sobre as mesmas. */</h5>
+                </div>
+            </div>
+            <!--Fim Skils-->
+
+            <!--ínicio projetos-->
+            <div class="main-div4" id="h-three">
+                <div class="main-div4-line1">
+                    <a href="https://estevanchicoskivieira.github.io/JeallCoffee/" target="_blank">
+                        <div id="coffee" class="card-projetos">
+
+                        </div>
+                    </a>
+                    <a href="https://estevanchicoskivieira.github.io/landingPage/" target="_blank">
+                        <div id="landing" class="card-projetos">
+
+                        </div>
+                    </a>
+                    <a href="https://estevanchicoskivieira.github.io/d-dogs/" target="_blank">
+                        <div id="d-dogs" class="card-projetos">
+
+                        </div>
+                    </a>
+                </div>
+                <div class="main-div4-line2">
+                    <div class="card-projetos">
+                        <div class="faixa">
+                            <h5>Vazio</h5>
+                        </div>
+                    </div>
+                    <div class="card-projetos">
+                        <div class="faixa">
+                            <h5>Vazio</h5>
+                        </div>
+                    </div>
+                    <div class="card-projetos">
+                        <div class="faixa">
+                            <h5>Vazio</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-div4-vizu">
+                    <span id="ver">Ver mais</span>
+                </div>
+            </div>
+            <!--Fim projetos-->
+        </main>
+
+        <script src="./Assets/js/projetos.js"></script>
+        <script src="./Assets/js/index.js"></script>
+        <script src="./Assets/js/skils.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,364 @@
+:root{
+    --background1: #101014;
+    --background2: #16161b;
+    --text: #ffffff;
+    --primaryColor: #882fdb;
+    --secondaryColor: #9e53e4;
+    --terciaryColor: #6b22af;
+    --selector: #892be241;
+    --borderOne: #808080;
+    --borderTwo: #000000; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 5vw;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-button{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-button-case{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--background2);
+    border: 1px solid var(--borderOne);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#menu-h{
+    position: absolute;
+    opacity: 0;
+}
+
+.label{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 20px;
+}
+
+.label span{
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--primaryColor);
+    transition: 0.25s ease-in-out;
+}
+
+.label span:nth-child(1){
+    top: 0;
+}
+
+.label span:nth-child(2){
+    top: 8px;
+}
+
+.label span:nth-child(3){
+    top: 16px;
+}
+
+#menu-h:checked + .label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#menu-h:checked + .label span:nth-child(2){
+    opacity: 0;
+}
+
+#menu-h:checked + .label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.header-main{
+    width: 100%;
+    height: 60vh;
+    background-color: var(--background2);
+    border: 1px solid var(--borderOne);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 40pt;
+    transform: translateX(-100%);
+    transition: .3s ease-in-out;
+} 
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-div1{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--background1);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5vw;
+}
+
+.main-div1-div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ola span{
+    color: var(--primaryColor);
+    transition: .7s ease-in-out;
+}
+
+#main-id-one::after{
+    padding-left: 20px;
+    content: '</>';
+    font-size: 35pt;
+    color: var(--secondaryColor);
+}
+
+#main-id-one span{
+    color: var(--primaryColor);
+}
+
+.estevan{
+    width: 25vh;
+    height: 25vh;
+    opacity: 0.6;
+    background: url(../img/estevan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.perfil{
+    padding-bottom: 5vh;
+}
+
+.main-div2{
+    width: 100%;
+    height: 40vh;
+    background-color: var(--background1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 5vh;
+}
+
+.main-div3{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(352deg, var(--background2) 50%, var(--background1) 50%);
+    display: flex;
+    padding-bottom: 10vh;
+}
+
+.main-div3-div1{
+    width: 50%;
+    height: 100%;
+    padding: 10vh;
+    padding-top: 10vw;
+}
+
+.main-div3-div2{
+    width: 50%;
+    height: 100%;
+    padding: 10vh;
+    color: var(--borderOne);
+    padding-top: 10vw;
+    transition: 3s;
+}
+
+.line-imgs1, .line-imgs2, .line-imgs3{
+    display: flex;
+    align-items: center;
+    height: 40%;
+    justify-content: space-evenly;
+}
+
+.line-imgs3{
+    gap: 1vh;
+}
+
+.line-imgs1 img, .line-imgs2 img, .line-imgs3 img{
+    opacity: .5;
+    transition: .2s ease-in-out;
+}
+
+.main-div4{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(170deg, var(--background2) 50%, var(--background1) 50%);
+}
+
+.main-div4-line1, .main-div4-line2{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-div4-line2{
+    display: none;
+}
+
+.main-div4-vizu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-div4-vizu span{
+    color: var(--primaryColor);
+    font-size: 25pt;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.main-div4-vizu span:hover{
+    color: var(--terciaryColor);
+}
+
+.card-projetos{
+    width: 22vw;
+    height: 25vh;
+    background-color: var(--background1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--borderOne);
+    overflow: hidden;
+    transition: .2s linear;
+}
+
+.faixa{
+    width: 1500px;
+    height: 30px;
+    background-color: var(--primaryColor);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    rotate: -27deg;
+    border-radius: 10px;
+    border: 1px solid var(--borderOne);
+}
+
+.faixa h5{
+    font-weight: 100;
+    padding: 0 1000px;
+}
+
+.name{
+    width: 5vw;
+    height: 5vh;
+    background-color: var(--text);
+    border: 1px solid var(--borderTwo);
+    border-radius: 5px;
+    justify-content: center;
+    display: none;
+}
+
+#d-dogs{
+    background: url(../img/d-dogs-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .7;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.estevan:hover{
+    opacity: 1;
+    transform: translate(-1%, 1%) scale(1.1);
+}
+
+.perfil{
+    width: auto;
+    height: auto;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: var(--background1);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--primaryColor);
+    border: 0px;
+    border-radius: 10px;
+}
+
+::selection {
+    background-color: var(--selector);
+}
+
+#coffee{
+    background: url(../Img/coffee.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+#coffee input{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+#landing{
+    background: url(../Img/landing.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+#landing input{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+#d-dogs input{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+#sla{
+    display: none;
+}
